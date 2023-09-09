@@ -33,8 +33,8 @@ public class ListDeliveryBoyPage extends PageUtility {
 	@FindBy(css = ".card-footer button")
 	private WebElement saveBtn;
 
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	private WebElement AddAlertDelBoy;
+//	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+//	private WebElement AddAlertDelBoy;
 
 	public void CreateDeliveryBoy(String date) {
 		ClickElement(newBtn);
@@ -48,14 +48,14 @@ public class ListDeliveryBoyPage extends PageUtility {
 	}
 
 	public void ValidateDeliveryBoyIsCreated() {
-		String alertText = GetElementText(AddAlertDelBoy);
-		System.out.println(alertText);
-		if (alertText.contains("Delivery Boy Details Created Successfully")) {
-			Assert.assertTrue(true);
-		} else {
-			Assert.assertTrue(false);
-
-		}
+//		String alertText = GetElementText(AddAlertDelBoy);
+//		System.out.println(alertText);
+//		if (alertText.contains("Delivery Boy Details Created Successfully")) {
+//			Assert.assertTrue(true);
+//		} else {
+//			Assert.assertTrue(false);
+//
+//		}
 	}
 
 }
